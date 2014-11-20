@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Desk Calendar",
+  "version": "1",
+  "description": "Wide Google calendar for the desk calendar.",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.google.com/calendar/render*"
+      ],
+      "js": ["cs_main.js"]
+    }
+  ]
+}
